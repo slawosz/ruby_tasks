@@ -23,6 +23,11 @@ describe Book do
   end
 
   describe 'title' do
+    # in TestUnit
+    # def test_capitalize_first_letter_in_title
+    #   @book.title = "inferno"
+    #   assert_equal "Inferno", @book.title
+    # end 
     it 'should capitalize the first letter' do
       @book.title = "inferno"
       @book.title.should == "Inferno"
