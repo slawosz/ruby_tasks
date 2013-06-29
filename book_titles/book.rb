@@ -10,23 +10,18 @@ class Book
   end
 
   def title
-      
       array = @title.split
-
+      exceptions = ["an", "a", "the", "and", "in", "of"]
+      
       array.map! {|x|
-        if x == "an" and x != array[0] or x == "a" and x != array[0] or x == "the" and x != array[0] or x == "and" and x != array[0] or x == "in" and x != array[0] or x == "of" and x != array[0]
+        if x != array[0] && exceptions.include?(x)
           x.downcase
         else 
           x.capitalize
         end      
       }
+      
       array.join(" ")
-
   end 
-
-  
-  
-
-
 
 end
