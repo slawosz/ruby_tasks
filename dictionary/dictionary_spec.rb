@@ -15,6 +15,7 @@ describe Dictionary do
   end
 
   it 'is empty when created' do
+    @d = Dictionary.new   
     @d.entries.should == {}
   end
 
