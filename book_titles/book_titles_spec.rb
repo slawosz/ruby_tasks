@@ -54,9 +54,9 @@ describe Book do
           @book.title = "to eat an apple a day"
           @book.title.should == "To Eat an Apple a Day"
         end
-      specify
+      end
 
-      end 'conjunctions' do
+      specify 'conjunctions' do
         @book.title = "war and peace"
         @book.title.should == "War and Peace"
       end
