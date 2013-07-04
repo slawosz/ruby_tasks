@@ -10,11 +10,10 @@ class Dictionary
 
   def add(hash)
     @entries.merge!(hash)
-
   end
+
   def keywords
     @entries.keys
   end
-
 
 end
